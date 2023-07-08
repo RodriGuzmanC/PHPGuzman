@@ -1,0 +1,271 @@
+*{
+    font-family: arial, sans-serif;
+}
+form{
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    border: 1px solid red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+input[type=submit]:hover, input[type=submit]:active {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.form{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid rgb(6, 157, 141);
+    border-radius: 5px;
+    width: 50%;
+    padding: 25px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.error{
+    width: 100%;
+    border: 1px solid rgb(235, 175, 185);
+    background-color: rgb(242, 222, 222);
+    color: rgb(169, 68, 66);
+}
+
+.error a{
+    text-decoration: none;
+}
+.error a:link, .error a:visited{
+    color: rgb(169, 68, 66);
+}
+.error a:hover, .errora:active{
+    color: rgb(169, 68, 66);
+}
+.error span{
+    font-size: 22px;
+}
+
+.card p{
+    font-family: arial, sans-serif;
+    text-align: left;
+    width: 50%;
+}
+
+.card #title{
+    width: 100%;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+form .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card #accept, .card #cancel, .card #delete{
+    width: 46%;
+}
+
+.card #submit{
+    width: 100%;
+}
+
+.card #delete{
+    background-color: red;
+}
+
+.card #delete:hover{
+    background-color: rgb(204, 0, 0);
+}
+
+.card #cancel{
+    background-color: rgb(228, 221, 221);
+    color: black;
+}
+
+.card #cancel:hover{
+    background-color: rgb(172, 172, 172);
+}
+
+.table{
+    width: 100%;
+}
+
+.table table {
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-radius: 5px;
+    
+}
+  
+td, th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+th{
+  background-color: rgb(16, 219, 43);
+}
+
+.button{
+    width: auto;
+    margin: 15px 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    transition: transform .2s;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.button a{
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.button a:link, .button a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(16, 219, 43);
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.button a:hover, .button a:active {
+    background-color: rgb(16, 219, 43);
+    color: black;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.table tr td a img{
+    width: 18px;
+    transition: transform .2s;
+}
+
+.table tr td a img:hover{
+    transform: scale(1.4);
+}
+
+form .help{
+    display: none;
+}
+
+form .has_error{
+    display: inline;
+    color: red;
+    font-size: 14px;
+}
+
+form .input_has_error, form .input_has_error:focus{
+    border: 1px solid red;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col-right{
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.col-left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.row-left{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+
+@media screen and (max-width:800px){
+    .main{
+        margin: 20px 0;
+    }
+
+    .container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .col-right{
+        align-items: flex-start;
+    }
+}
+
+/* img{
+    filter: invert(100%);
+} */
